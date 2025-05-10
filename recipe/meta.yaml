@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-cohere" %}
-{% set version = "0.40.3" %}
+{% set version = "0.40.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_cohere-{{ version }}.tar.gz
-  sha256: 23f6f237f7cdef661549b3f7d02dc8b1c69ce0cbf3e0050c05ce3f443458fe35
+  sha256: c4ac17c6d32f772da06cd9ee51e5da546dae4b2b9aa3114ff69b822e2997bbd4
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - opentelemetry-api >=1.28.0,<2.0.0
     - opentelemetry-instrumentation >=0.50b0
     - opentelemetry-semantic-conventions >=0.50b0
-    - opentelemetry-semantic-conventions-ai 0.4.5
+    - opentelemetry-semantic-conventions-ai 0.4.8
 
 test:
   imports:
