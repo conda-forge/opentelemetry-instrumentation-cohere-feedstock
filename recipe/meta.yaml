@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-cohere" %}
-{% set version = "0.51.1" %}
+{% set version = "0.52.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_cohere-{{ version }}.tar.gz
-  sha256: 0d752d59a78a092f04e56553a8349862fcc71907c195c8122f6ac1b71ac861c0
+  sha256: 1bd2ce48cca88a86411dded75a371cd38ec7aca375f44ed15dcb25a8fc8a851a
 
 build:
   noarch: python
