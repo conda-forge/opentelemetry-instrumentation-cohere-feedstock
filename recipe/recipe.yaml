@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: opentelemetry-instrumentation-cohere
-  version: "0.63.0"
+  version: "0.63.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/opentelemetry_instrumentation_cohere-${{ version }}.tar.gz
-  sha256: 9d1913fb5ee51ba656a338fa1271e12f75ff41c74bac321c1322333d503cc277
+  sha256: 2c935a9645ab991f376970992b385dc3702bb751889e8715cdac76cf413a253f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
